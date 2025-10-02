@@ -1,4 +1,6 @@
 body {
+  margin: 0;
+  padding: 0;
   font-family: 'Inter', Arial, sans-serif;
   color: #333;
   line-height: 1.6;
@@ -20,8 +22,6 @@ h2, h3 {
 h1 {
   font-weight: 700;
 }
-
-
 
 /* Header */
 .site-header {
@@ -113,9 +113,6 @@ h1 {
   }
 }
 
-main {
-  padding: 2rem;
-}
 
 footer {
   background: #f4f4f4;
@@ -135,12 +132,13 @@ footer {
 
 .section {
   width: 100%;
-  padding: 6rem 1rem;
+  padding: 1rem 1rem;
   scroll-margin-top: 80px; /* fixes navbar overlap when scrolling */
 }
 
 .container {
   margin: 0 auto;
+  padding: 0;
 }
 
 #home {
@@ -190,6 +188,7 @@ footer {
 
 
 .projects-grid {
+  padding: 2rem;
   display: grid;
   gap: 2rem;
 }
