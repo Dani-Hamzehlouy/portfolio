@@ -1,8 +1,27 @@
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  line-height: 1.5;
+  font-family: 'Inter', Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+  background: #f8f9fa;
 }
+
+a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h2, h3 {
+  font-weight: 600;
+}
+h1 {
+  font-weight: 700;
+}
+
+
 
 /* Header */
 .site-header {
@@ -106,10 +125,114 @@ footer {
 }
 
 .project-img {
-  width: 100%;
-  height: 180px;          /* fixed height for consistency */
+  width: 50%;
+  height: 50%;
   object-fit: cover;      /* crop nicely */
-  border-radius: 6px;
-  margin-bottom: 0.75rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
   display: block;
 }
+
+.section {
+  width: 100%;
+  padding: 6rem 1rem;
+  scroll-margin-top: 80px; /* fixes navbar overlap when scrolling */
+}
+
+.container {
+  margin: 0 auto;
+}
+
+#home {
+  background: #ffffff;
+  text-align: center;
+}
+
+#about {
+  background: #dcdcdc;
+}
+
+#experience {
+  background: #ffffff;
+}
+
+#projects {
+  background: #c8c8c8;
+}
+
+#contact {
+  background: #ffffff;
+  text-align: center;
+}
+
+.section h2 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #222;
+  border-bottom: 2px solid #ddd;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+
+.project-card {
+  background: #fff;
+  border-radius: 12px;
+  border: none;
+  padding: 1rem;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+}
+
+
+.projects-grid {
+  display: grid;
+  gap: 2rem;
+}
+
+@media (min-width: 700px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1100px) {
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.btn {
+  display: inline-block;
+  background: #fff;
+  color: #0077cc;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background 0.2s, color 0.2s;
+}
+
+.btn:hover {
+  background: #005fa3;
+  color: #fff;
+}
+
+.site-footer a {
+  color: #0077cc;
+  text-decoration: none;
+  margin-right: 0.75rem;
+  font-weight: 500;
+}
+
+.site-footer a:hover {
+  color: #005fa3;
+}
+
+.site-footer i {
+  margin-right: 0.25rem;
+}
+
