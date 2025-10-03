@@ -236,3 +236,16 @@ footer {
   margin-right: 0.25rem;
 }
 
+.responsive-image {
+  /* Set the width to 50% of the page's container/viewport */
+  width: 50%; 
+  /* Makes the image perfectly round/oval */
+  border-radius: 50%;
+  
+  /* IMPORTANT: For a perfect circle, the image must be a perfect square! */
+  width: 150px;
+  height: 150px; 
+  
+  /* Recommended to ensure the image fits the new shape without distortion */
+  object-fit: cover; 
+}
